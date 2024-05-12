@@ -54,7 +54,7 @@ const Testimonial = () => {
                       <img
                         src={img}
                         alt=""
-                        className="block mx-auto h-[300px] w-full sm:w-[200px] object-cover"
+                        className="block mx-auto h-[300px] w-full rounded-md sm:w-[200px] object-cover"
                       />
                       <div className="space-y-4">
                         <p className="text-gray-500 text-black/80 dark:text-white/80 xl:pr-40">

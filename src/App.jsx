@@ -10,6 +10,8 @@ import Services from "./components/Services/Services";
 import Testimonial from "./components/Testimonial/Testimonial";
 import BlogsComp from "./components/Blogs/BlogsComp.jsx";
 import Footer from "./components/Footer/Footer";
+import Gallary from "./Gallary/Gallary.jsx";
+import Products from "./components/Products/Products.jsx";
 
 const App = () => {
   useEffect(() => {
@@ -28,6 +30,8 @@ const App = () => {
       <Hero />
       {/* <BrandsLogo /> */}
       <Services />
+      <Gallary/>
+      <Products/>
       <Testimonial />
       <BlogsComp />
       <Footer />

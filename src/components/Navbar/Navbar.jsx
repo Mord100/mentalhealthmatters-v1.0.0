@@ -48,10 +48,10 @@ const Navbar = () => {
           <nav className="hidden md:block">
             <ul className="flex items-center gap-8">
               {MenuLinks.map(({ id, name, link }) => (
-                <li key={id} className="py-4">
+                <li key={id} className="py-2">
                   <a
                     href={link}
-                    className=" text-lg font-medium  hover:text-gray-700 py-2 hover:border-b-2  transition-colors duration-500  "
+                    className=" text-md font-medium  hover:text-gray-700 py-2 hover:border-b-2  transition-colors duration-500  "
                   >
                     {name}
                   </a>

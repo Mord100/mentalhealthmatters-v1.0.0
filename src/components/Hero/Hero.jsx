@@ -3,7 +3,7 @@ import communityImage from "../../assets/website/team.jpg";
 
 const Hero = () => {
   return (
-    <div className="dark:bg-gray-950  dark:text-white duration-300  ">
+    <div className="dark:bg-gray-950 py-10 lg:py-0 dark:text-white duration-300  ">
       <div className="container min-h-[620px] flex mt-10 sm:mt-0">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 place-items-center">
           {/* Image section */}
@@ -15,7 +15,7 @@ const Hero = () => {
             />
             <div
               data-aos="slide-right"
-              className="absolute -bottom-5 -right-8 px-4 py-2 rounded-xl bg-white dark:bg-gray-900 dark:text-white shadow-md"
+              className="absolute -bottom-5 -right-8 px-4 py-2 rounded-xl mx-8 bg-white dark:bg-gray-900 dark:text-white shadow-md"
             >
               <p className="text-gray-500 text-sm ">⭐ Community</p>
               <h1 className="font-bold">
