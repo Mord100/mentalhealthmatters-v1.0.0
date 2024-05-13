@@ -28,7 +28,7 @@ const Hero = () => {
           <div className="space-y-5 order-2 font-sans sm:order-1 xl:pr-40 ">
             <h1
               data-aos="fade-up"
-              className="text-4xl sm:text-5xl font-bold"
+              className="text-4xl sm:text-5xl font-family font-bold"
               style={{ lineHeight: 1.2 }}
             >
               MENTAL <br/>

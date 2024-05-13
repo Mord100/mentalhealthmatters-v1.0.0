@@ -38,7 +38,7 @@ const Testimonial = () => {
   };
   return (
     <>
-      <div className="py-10">
+      <div className="py-10 font-family">
         <div className="container">
           {/* testimonial section */}
           <div

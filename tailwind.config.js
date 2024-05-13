@@ -6,6 +6,7 @@ export default {
     extend: {
       fontFamily: {
         inter: ["Inter", "sans-serif"],
+        family: ["Gantari", "sans-serif"],
       },
       colors: {
         primary: "#6153CD",
@@ -15,6 +16,7 @@ export default {
         },
         dark: "#111111",
       },
+      
       container: {
         center: true,
         padding: {

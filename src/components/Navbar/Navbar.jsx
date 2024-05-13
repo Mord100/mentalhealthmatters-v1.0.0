@@ -20,17 +20,33 @@ export const MenuLinks = [
     name: "Blog",
     link: "/#projects",
   },
+  {
+    id: 4,
+    name: "Team",
+    link: "/#team",
+  },
+  {
+    id: 5,
+    name: "Shop",
+    link: "/shop",
+  },
+  {
+    id: 6,
+    name: "Gallery",
+    link: "/gallery",
+  },
 ];
+
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
 
   const toggleMenu = () => {
     setShowMenu(!showMenu);
   };
+  
   return (
     <div
-      className="z-10 w-full dark:bg-gray-800 bg-white h-15 shadow-sm fixed dark:text-white duration-300
-    "
+      className="z-10 w-full dark:bg-gray-800 bg-white font-family h-15 shadow-sm fixed dark:text-white duration-300"
     >
       <div className="container py-3 md:py-2">
         <div className="flex justify-between items-center">
@@ -51,7 +67,7 @@ const Navbar = () => {
                 <li key={id} className="py-2">
                   <a
                     href={link}
-                    className=" text-md font-medium  hover:text-gray-700 py-2 hover:border-b-2  transition-colors duration-500  "
+                    className=" text-md font-medium hover:text-gray-700 py-2 hover:border-b-2 transition-colors duration-500"
                   >
                     {name}
                   </a>
@@ -68,7 +84,7 @@ const Navbar = () => {
             {showMenu ? (
               <HiMenuAlt1
                 onClick={toggleMenu}
-                className=" cursor-pointer transition-all"
+                className="cursor-pointer transition-all"
                 size={30}
               />
             ) : (

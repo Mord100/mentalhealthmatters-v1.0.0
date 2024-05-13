@@ -33,13 +33,13 @@ const Services = () => {
   return (
     <>
       <span id="about"></span>
-      <div className="bg-gray-100 dark:bg-black dark:text-white py-12 sm:grid sm:place-items-center">
+      <div className="bg-gray-100 dark:bg-black font-family dark:text-white py-12 sm:grid sm:place-items-center">
         <div className="container">
           {/* Header */}
           <div className="pb-12 text-center space-y-3">
             <h1
               data-aos="fade-up"
-              className="text-3xl font-bold sm:text-3xl text-gray-800 dark:text-white"
+              className="text-3xl font-bold font-family sm:text-3xl text-gray-800 dark:text-white"
             >
               Explore Our Mental Wellness Services
             </h1>

@@ -3,8 +3,8 @@ import React from 'react';
 const Products = () => {
   return (
     <>  
-      <h1 className='font-bold px-20 text-2xl'>Products | Shop</h1>
-      <div className="p-1 flex flex-wrap items-center justify-center px-20">
+      <h1 className='font-bold px-20 font-family text-2xl'>Products | Shop</h1>
+      <div className="p-1 flex flex-wrap font-family items-center justify-center px-20">
         <div className="flex-shrink-0 m-6 relative overflow-hidden bg-orange-500 rounded-lg max-w-xs shadow-lg">
           <svg className="absolute bottom-0 left-0 mb-8" viewBox="0 0 375 283" fill="none" style={{ transform: "scale(1.5)", opacity: 0.1 }}>
             <rect x="159.52" y="175" width="152" height="152" rx="8" transform="rotate(-45 159.52 175)" fill="white" />
