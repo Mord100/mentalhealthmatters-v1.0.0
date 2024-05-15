@@ -16,7 +16,6 @@ const ResponsiveMenu = ({ showMenu }) => {
           <FaUserCircle size={50} />
           <div>
             <h1>Mental Health Matters</h1>
-            <h1 className="text-sm text-slate-500">User</h1>
           </div>
         </div>
         <nav className="mt-12">
@@ -33,7 +32,7 @@ const ResponsiveMenu = ({ showMenu }) => {
       </div>
       <div className="footer">
         <h1>
-          Made with ❤ by <a href="">Mordecai</a>{" "}
+          <a href="">Mordecai</a>{"https://devmord.netlify.app/"}
         </h1>
       </div>
     </div>
