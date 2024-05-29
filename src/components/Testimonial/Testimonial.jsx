@@ -1,80 +1,33 @@
-import React from "react";
-import Slider from "react-slick";
-
-const testimonialData = [
-  {
-    id: 1,
-    name: "Stephen Fry",
-    text: "It's not all bad. Heightened self-consciousness, apartness, an inability to join in, physical shame and self-loathing—they are not all bad. Those devils have been my angels. Without them, I would never have disappeared into language, literature, the mind, laughter and all the mad intensities that made and unmade me.",
-    img: "https://picsum.photos/101/101",
-  },
-  {
-    id: 2,
-    name: "Dolly Parton",
-    text: "The way I see it, if you want the rainbow, you gotta put up with the rain.",
-    img: "https://picsum.photos/102/102",
-  },
-  {
-    id: 3,
-    name: "Abraham Lincoln",
-    text: "Folks are usually about as happy as they make their minds up to be.",
-    img: "https://picsum.photos/103/103",
-  },
-];
-
-const Testimonial = () => {
-  var settings = {
-    dots: true,
-    arrows: false,
-    infinite: true,
-    speed: 600,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: false,
-    autoplaySpeed: 3000,
-    cssEase: "linear",
-    pauseOnHover: true,
-    pauseOnFocus: true,
-  };
+export default function Example() {
   return (
-    <>
-      <div className="py-10 font-family">
-        <div className="container">
-          {/* testimonial section */}
-          <div
-            data-aos="fade-up"
-            className="grid grid-cols-1 max-w-screen-xl mx-auto gap-6"
-          >
-            <Slider {...settings}>
-              {testimonialData.map(({ id, name, text, img }) => {
-                return (
-                  <div key={id} className="my-6">
-                    {/* card */}
-                    <div className="flex flex-col sm:flex-row gap-5 md:gap-14 p-4 mx-4 rounded-xl dark:bg-gray-800 relative">
-                      <img
-                        src={img}
-                        alt=""
-                        className="block mx-auto h-[300px] w-full rounded-md sm:w-[200px] object-cover"
-                      />
-                      <div className="space-y-4">
-                        <p className="text-gray-500 text-black/80 dark:text-white/80 xl:pr-40">
-                          “{text}”
-                        </p>
-                        <h1 className="text-xl font-bold">{name}</h1>
-                      </div>
-                      <p className="text-black/10 text-[12rem] font-serif absolute bottom-0 right-0">
-                        ,,
-                      </p>
-                    </div>
-                  </div>
-                );
-              })}
-            </Slider>
-          </div>
-        </div>
+    <section className="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:px-8">
+      <div className="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.indigo.100),white)] opacity-20" />
+      <div className="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center" />
+      <div className="mx-auto max-w-2xl lg:max-w-4xl">
+        <img className="mx-auto h-12" src="https://tailwindui.com/img/logos/workcation-logo-indigo-600.svg" alt="" />
+        <figure className="mt-10">
+          <blockquote className="text-center text-xl font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9">
+            <p>
+              “Mental wellness is not a destination, but a process. It's about how you drive, not where you're going.
+              Taking small steps each day can lead to profound improvements in your overall well-being.”
+            </p>
+          </blockquote>
+          <figcaption className="mt-10">
+            <img
+              className="mx-auto h-10 w-10 rounded-full"
+              src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+              alt=""
+            />
+            <div className="mt-4 flex items-center justify-center space-x-3 text-base">
+              <div className="font-semibold text-gray-900">Nikiwe</div>
+              <svg viewBox="0 0 2 2" width={3} height={3} aria-hidden="true" className="fill-gray-900">
+                <circle cx={1} cy={1} r={1} />
+              </svg>
+              <div className="text-gray-600">Executive Director-Rugare</div>
+            </div>
+          </figcaption>
+        </figure>
       </div>
-    </>
-  );
-};
-
-export default Testimonial;
+    </section>
+  )
+}

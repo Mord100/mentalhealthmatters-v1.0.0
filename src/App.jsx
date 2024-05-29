@@ -5,10 +5,9 @@ import "aos/dist/aos.css";
 // Component import
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
-import BrandsLogo from "./components/BrandsLogo/BrandsLogo.jsx";
 import Services from "./components/Services/Services";
 import Testimonial from "./components/Testimonial/Testimonial";
-import BlogsComp from "./components/Blogs/BlogsComp.jsx";
+import Blog from "./components/Blogs/Blog.jsx";
 import Footer from "./components/Footer/Footer";
 import Gallary from "./Gallary/Gallary.jsx";
 import Products from "./components/Products/Products.jsx";
@@ -26,8 +25,8 @@ const App = () => {
   }, []);
 
   return (
-    <div className="bg-white dark:bg-black dark:text-white text-black overflow-x-hidden">
-      <Navbar />
+    <div className="bg-white text-gray-800 overflow-x-hidden">
+      {/* <Navbar /> */}
       <Hero />
       {/* <BrandsLogo /> */}
       <Services />
@@ -35,7 +34,7 @@ const App = () => {
       <Products/>
       <Team/>
       <Testimonial />
-      <BlogsComp />
+      <Blog/>
       <Footer />
     </div>
   );

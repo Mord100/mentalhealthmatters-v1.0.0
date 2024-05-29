@@ -1,35 +1,36 @@
 import React from 'react';
+import Member from '../../assets/website/member.jpeg'
 
 const Team = () => {
   const teamMembers = [
     {
       id: 1,
-      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600",
+      image: Member,
       name: "Howard Bowa",
       profession: "Mental Health Advocate & Pschosocial first aider",
     },
     {
       id: 2,
-      image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600",
+      image: Member,
       name: "Dyzie Magela",
       profession: "Social Work & Special Needs Education Specialist",
     },
     {
       id: 3,
-      image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=600",
+      image: Member,
       name: "Mordecai Chingolo",
       profession: "Computing and Information Systems Analyst",
     },
     {
       id: 4,
-      image: "https://images.unsplash.com/photo-1623662346448-4fd13f54ffd0?w=600",
+      image: Member,
       name: "Another Guy",
       profession: "Another Guy's position",
     },
   ];
 
   return (
-    <div className="flex flex-col items-center justify-center px-5 py-8 text-slate-800 xl:px-10 xl:py-20 dark:text-slate-100">
+    <div className="flex flex-col items-center justify-center px-5 py-8 text-gray-800 xl:px-10 xl:py-20">
       <h2 className="mb-6 text-3xl font-bold">Meet Our Team</h2>
       <p className="mb-16">
         We're fueled by a passion for our work and a belief in making a positive
