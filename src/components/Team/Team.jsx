@@ -1,17 +1,20 @@
 import React from 'react';
 import Member from '../../assets/website/member.jpeg'
+import Member1 from '../../assets/website/member1.jpeg'
+import Member2 from '../../assets/website/member2.jpeg'
+import User from '../../assets/website/user.jpg'
 
 const Team = () => {
   const teamMembers = [
     {
       id: 1,
-      image: Member,
+      image: Member1,
       name: "Howard Bowa",
       profession: "Mental Health Advocate & Pschosocial first aider",
     },
     {
       id: 2,
-      image: Member,
+      image: Member2,
       name: "Dyzie Magela",
       profession: "Social Work & Special Needs Education Specialist",
     },
@@ -23,7 +26,7 @@ const Team = () => {
     },
     {
       id: 4,
-      image: Member,
+      image: User,
       name: "Another Guy",
       profession: "Another Guy's position",
     },

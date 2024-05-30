@@ -15,6 +15,7 @@ import {
   XMarkIcon,
 } from '@heroicons/react/24/outline';
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid';
+import User from '../../assets/website/user.jpg'
 
 const posts = [
   {
@@ -27,11 +28,11 @@ const posts = [
     datetime: '2024-05-28',
     category: { title: 'Mental Health', href: '#' },
     author: {
-      name: 'Sarah Johnson',
+      name: 'Auther Name',
       role: 'Mental Health Specialist',
       href: '#',
       imageUrl:
-        'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?crop=faces&fit=crop&w=256&h=256&q=80',
+        User,
     },
   },
   {
@@ -44,11 +45,11 @@ const posts = [
     datetime: '2024-04-15',
     category: { title: 'Wellness', href: '#' },
     author: {
-      name: 'John Smith',
+      name: 'Auther Name',
       role: 'Wellness Coach',
       href: '#',
       imageUrl:
-        'https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?crop=faces&fit=crop&w=256&h=256&q=80',
+      User,
     },
   },
   {
@@ -61,11 +62,11 @@ const posts = [
     datetime: '2024-03-22',
     category: { title: 'Nutrition', href: '#' },
     author: {
-      name: 'Emily Davis',
+      name: 'Auther Name',
       role: 'Nutritionist',
       href: '#',
       imageUrl:
-        'https://images.unsplash.com/photo-1494790108377-be9c29b29330?crop=faces&fit=crop&w=256&h=256&q=80',
+      User,
     },
   },
   // More posts...
