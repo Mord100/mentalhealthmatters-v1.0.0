@@ -24,23 +24,18 @@ const Team = () => {
       name: "Mordecai Chingolo",
       profession: "Computing and Information Systems Analyst",
     },
-    {
-      id: 4,
-      image: User,
-      name: "Another Guy",
-      profession: "Another Guy's position",
-    },
+   
   ];
 
   return (
-    <div className="flex flex-col items-center justify-center px-5 py-8 text-gray-800 xl:px-10 xl:py-20">
+    <div id='team' className="flex flex-col items-center justify-center px-5 py-8 text-gray-800 xl:px-10 xl:py-20">
       <h2 className="mb-6 text-3xl font-bold">Meet Our Team</h2>
       <p className="mb-16">
         We're fueled by a passion for our work and a belief in making a positive
         impact. Let our team's dedication and drive accelerate your success.
       </p>
 
-      <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
         {teamMembers.map((member) => (
           <div key={member.id} className="group relative flex cursor-pointer flex-col gap-2 overflow-hidden rounded-xl">
             <img

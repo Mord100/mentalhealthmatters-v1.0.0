@@ -9,7 +9,7 @@ import Services from "./components/Services/Services";
 import Testimonial from "./components/Testimonial/Testimonial";
 import Blog from "./components/Blogs/Blog.jsx";
 import Footer from "./components/Footer/Footer";
-import Gallary from "./Gallary/Gallary.jsx";
+import Gallary from "./components/gallary/Gallary.jsx";
 import Products from "./components/Products/Products.jsx";
 import Team from "./components/Team/Team.jsx";
 
