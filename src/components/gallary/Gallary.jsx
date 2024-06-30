@@ -1,48 +1,52 @@
 import React from 'react';
 import ReactImageGallery from 'react-image-gallery';
 import 'react-image-gallery/styles/css/image-gallery.css';
+import Image1 from '../../assets/event/event1.jpeg'
+import Image2 from '../../assets/event/event2.jpeg'
+import Image3 from '../../assets/event/event4.jpeg'
+
 
 const ImageGalleryComponent = () => {
   const images = [
     {
-      original: 'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg',
-      thumbnail: 'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg',
+      original: Image1,
+      thumbnail: Image1
     },
     {
-      original: 'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg',
-      thumbnail: 'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg',
+      original: Image2,
+      thumbnail: Image2,
     },
     {
-      original: 'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg',
-      thumbnail: 'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg',
+      original: Image3,
+      thumbnail: Image3,
     },
     {
-      original: 'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg',
-      thumbnail: 'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg',
+      original: Image1,
+      thumbnail: Image1,
     },
     {
-      original: 'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg',
-      thumbnail: 'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg',
+      original: Image1,
+      thumbnail: Image1,
     },
     {
-      original: 'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg',
-      thumbnail: 'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg',
+      original: Image1,
+      thumbnail: Image1,
     },
     {
-      original: 'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg',
-      thumbnail: 'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg',
+      original: Image1,
+      thumbnail: Image1,
     },
     {
-      original: 'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg',
-      thumbnail: 'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg',
+      original: Image1,
+      thumbnail: Image1,
     },
     {
-      original: 'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg',
-      thumbnail: 'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg',
+      original: Image1,
+      thumbnail: Image1,
     },
     {
-      original: 'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg',
-      thumbnail: 'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg',
+      original: Image1,
+      thumbnail: Image1,
     },
   ];
 

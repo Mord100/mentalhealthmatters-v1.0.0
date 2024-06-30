@@ -53,6 +53,9 @@ const product = {
     { name: 'White', class: 'bg-white', selectedClass: 'ring-gray-400' },
     { name: 'Gray', class: 'bg-gray-200', selectedClass: 'ring-gray-400' },
     { name: 'Black', class: 'bg-gray-900', selectedClass: 'ring-gray-900' },
+    { name: 'Blue', class: 'bg-blue-600', selectedClass: 'ring-blue-600' },
+
+
   ],
   sizes: [
     { name: 'XXS', inStock: false },
@@ -317,13 +320,13 @@ export default function Example() {
               </div>
             </div>
 
-            <div className="mt-10">
+            {/* <div className="mt-10">
               <h2 className="text-sm font-medium text-gray-900">Details</h2>
 
               <div className="mt-4 space-y-6">
                 <p className="text-sm text-gray-600">{product.details}</p>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
