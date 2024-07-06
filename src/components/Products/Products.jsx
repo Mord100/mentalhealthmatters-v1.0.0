@@ -185,7 +185,7 @@ export default function Example() {
                   ))}
                 </div>
                 <p className="sr-only">{reviews.average} out of 5 stars</p>
-                <a href={reviews.href} className="ml-3 text-sm font-medium text-indigo-600 hover:text-indigo-500">
+                <a href={reviews.href} className="ml-3 text-sm font-medium text-indigo-600 hover:text-gray-900">
                   {reviews.totalCount} reviews
                 </a>
               </div>
@@ -309,7 +309,7 @@ export default function Example() {
               </div>
             </div>
 
-            <div className="mt-10">
+            {/* <div className="mt-10">
               <h3 className="text-sm font-medium text-gray-900">Highlights</h3>
 
               <div className="mt-4">
@@ -321,7 +321,7 @@ export default function Example() {
                   ))}
                 </ul>
               </div>
-            </div>
+            </div> */}
 
             {/* <div className="mt-10">
               <h2 className="text-sm font-medium text-gray-900">Details</h2>
