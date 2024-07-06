@@ -1,9 +1,23 @@
 import React from 'react';
 import ReactImageGallery from 'react-image-gallery';
 import 'react-image-gallery/styles/css/image-gallery.css';
-import Image1 from '../../assets/event/event1.jpeg'
+import Image1 from '../../assets/event/WhatsApp Image 2024-07-06 at 14.41.04.jpeg'
 import Image2 from '../../assets/event/event2.jpeg'
 import Image3 from '../../assets/event/event4.jpeg'
+import Image4 from '../../assets/event/event3.jpeg'
+import Image5 from '../../assets/event/event5.jpeg'
+import Image6 from '../../assets/event/event6.jpeg'
+import Image7 from '../../assets/event/event7.jpeg'
+import Image8 from '../../assets/event/WhatsApp Image 2024-07-01 at 10.31.23.jpeg'
+import Image9 from '../../assets/event/WhatsApp Image 2024-07-01 at 10.31.24.jpeg'
+import Image10 from '../../assets/event/WhatsApp Image 2024-07-01 at 10.31.25.jpeg'
+import Image12 from '../../assets/event/WhatsApp Image 2024-07-06 at 14.41.04 (1).jpeg'
+import Image13 from '../../assets/event/WhatsApp Image 2024-07-01 at 10.31.27.jpeg'
+import Image14 from '../../assets/event/WhatsApp Image 2024-07-01 at 10.31.29 (1).jpeg'
+
+
+
+
 
 
 const ImageGalleryComponent = () => {
@@ -21,32 +35,44 @@ const ImageGalleryComponent = () => {
       thumbnail: Image3,
     },
     {
-      original: Image1,
-      thumbnail: Image1,
+      original: Image13,
+      thumbnail: Image13,
     },
     {
-      original: Image1,
-      thumbnail: Image1,
+      original: Image12,
+      thumbnail: Image12,
     },
     {
-      original: Image1,
-      thumbnail: Image1,
+      original: Image14,
+      thumbnail: Image14,
     },
     {
-      original: Image1,
-      thumbnail: Image1,
+      original: Image4,
+      thumbnail: Image4,
     },
     {
-      original: Image1,
-      thumbnail: Image1,
+      original: Image5,
+      thumbnail: Image5,
     },
     {
-      original: Image1,
-      thumbnail: Image1,
+      original: Image6,
+      thumbnail: Image6,
     },
     {
-      original: Image1,
-      thumbnail: Image1,
+      original: Image7,
+      thumbnail: Image7,
+    },
+    {
+      original: Image8,
+      thumbnail: Image8,
+    },
+    {
+      original: Image9,
+      thumbnail: Image9,
+    },
+    {
+      original: Image10,
+      thumbnail: Image10,
     },
   ];
 

@@ -39,10 +39,8 @@ const Footer = () => {
                 <p className="font-medium">Services</p>
                 <nav className="flex flex-col mt-4 space-y-2 text-sm text-gray-600">
                   <a className="hover:opacity-75" href> 1on1 Coaching </a>
-                  <a className="hover:opacity-75" href> Company Review </a>
                   <a className="hover:opacity-75" href> Review </a>
                   <a className="hover:opacity-75" href> Consulting </a>
-                  <a className="hover:opacity-75" href> SEO Optimisation </a>
                 </nav>
               </div>
               <div>

@@ -22,6 +22,9 @@
 import { useState } from 'react'
 import { StarIcon } from '@heroicons/react/20/solid'
 import { Radio, RadioGroup } from '@headlessui/react'
+import Tshirt1 from "../../assets/website/tee.png"
+import Tshirt2 from "../../assets/website/tee2.png"
+import Tshirt3 from "../../assets/website/tee3.png"
 
 const product = {
   name: 'Mental Health Matters T-Shirts',
@@ -37,15 +40,15 @@ const product = {
       alt: 'Two each of gray, white, and black shirts laying flat.',
     },
     {
-      src: 'https://tailwindui.com/img/ecommerce-images/product-page-02-tertiary-product-shot-01.jpg',
+      src: Tshirt3,
       alt: 'Model wearing plain black basic tee.',
     },
     {
-      src: 'https://tailwindui.com/img/ecommerce-images/product-page-02-tertiary-product-shot-02.jpg',
+      src: Tshirt2,
       alt: 'Model wearing plain gray basic tee.',
     },
     {
-      src: 'https://tailwindui.com/img/ecommerce-images/product-page-02-featured-product-shot.jpg',
+      src: Tshirt1,
       alt: 'Model wearing plain white basic tee.',
     },
   ],
