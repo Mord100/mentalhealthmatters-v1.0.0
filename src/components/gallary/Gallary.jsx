@@ -81,7 +81,7 @@ const ImageGalleryComponent = () => {
       <div className="py-4">
         <h1 className='text-3xl font-bold border-b pb-8 '>Our Gallery</h1>
       <p className='py-4 text-gray-600'>
-         Browse images from our events...
+         Browse images from our events and activities...
       </p>
       </div>
       
