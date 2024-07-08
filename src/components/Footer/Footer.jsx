@@ -74,7 +74,7 @@ const Footer = () => {
           <div className="pt-8 mt-8 border-t border-gray-300">
             <div className="text-center text-sm text-gray-600 sm:flex sm:justify-between">
               <p>© 2024 Mental Health Matters. All rights reserved.</p>
-              <p className="mt-4 sm:mt-0">Developed by DivDynamics</p>
+              <p className="mt-4 sm:mt-0">Developed by <a href="https://divdynamics.netlify.app/" className="cursor-pointer hover:text-blue-600">DivDynamics</a></p>
             </div>
           </div>
         </div>
