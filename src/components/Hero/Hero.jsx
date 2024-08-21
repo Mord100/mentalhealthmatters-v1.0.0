@@ -173,7 +173,7 @@ export default function Example() {
             </div>
 
             <Transition appear show={isModalOpen} as={Fragment}>
-              <Dialog as="div" className="relative z-10" onClose={closeModal}>
+              <Dialog as="div" className="relative z-50" onClose={closeModal}>
                 <Transition.Child
                   as={Fragment}
                   enter="ease-out duration-300"
@@ -211,9 +211,9 @@ export default function Example() {
                           </p>
                         </div>
                         <img
-                          className="h-[100%] w-auto"
+                          className="w-auto py-2"
                           src={Flyer1}
-                          alt="Mental Health Matters Logo"
+                          alt="Event Flyer"
                         />
 
                         <div className="mt-4">
