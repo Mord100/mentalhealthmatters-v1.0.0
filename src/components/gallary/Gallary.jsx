@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import ReactImageGallery from 'react-image-gallery';
 import 'react-image-gallery/styles/css/image-gallery.css';
 import Image1 from '../../assets/event/WhatsApp Image 2024-07-06 at 14.41.04.jpeg'
@@ -15,6 +15,17 @@ import Image12 from '../../assets/event/WhatsApp Image 2024-07-06 at 14.41.04 (1
 import Image13 from '../../assets/event/WhatsApp Image 2024-07-01 at 10.31.27.jpeg'
 import Image14 from '../../assets/event/WhatsApp Image 2024-07-01 at 10.31.29 (1).jpeg'
 
+import Image15 from '../../assets/event/WhatsApp Image 2025-05-02 at 8.35.25 PM.jpeg'
+import Image16 from '../../assets/event/WhatsApp Image 2025-05-02 at 8.35.24 PM (1).jpeg'
+import Image17 from '../../assets/event/WhatsApp Image 2025-05-02 at 8.35.25 PM (2).jpeg'
+import Image18 from '../../assets/event/WhatsApp Image 2025-05-02 at 8.35.25 PM (3).jpeg'
+import Image19 from '../../assets/event/WhatsApp Image 2025-05-02 at 8.35.24 PM.jpeg'
+// import Image19 from '../../assets/event/WhatsApp Image 2024-07-01 at 10.31.29 (1).jpeg'
+// import Image20 from '../../assets/event/WhatsApp Image 2024-07-01 at 10.31.29 (1).jpeg'
+// import Image21 from '../../assets/event/WhatsApp Image 2024-07-01 at 10.31.29 (1).jpeg'
+// import Image22 from '../../assets/event/WhatsApp Image 2024-07-01 at 10.31.29 (1).jpeg'
+// import Image23 from '../../assets/event/WhatsApp Image 2024-07-01 at 10.31.29 (1).jpeg'
+// import Image24 from '../../assets/event/WhatsApp Image 2024-07-01 at 10.31.29 (1).jpeg'
 
 
 
@@ -73,6 +84,26 @@ const ImageGalleryComponent = () => {
     {
       original: Image10,
       thumbnail: Image10,
+    },
+    {
+      original: Image15,
+      thumbnail: Image15,
+    },
+    {
+      original: Image16,
+      thumbnail: Image16,
+    },
+    {
+      original: Image17,
+      thumbnail: Image17,
+    },
+    {
+      original: Image18,
+      thumbnail: Image18,
+    },
+    {
+      original: Image19,
+      thumbnail: Image19,
     },
   ];
 
