@@ -5,8 +5,10 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        inter: ["Inter", "sans-serif"],
-        family: ["Gantari", "sans-serif"],
+        sans: ["Inter Tight", "Inter", "system-ui", "sans-serif"],
+        serif: ["Instrument Serif", "DM Serif Display", "serif"],
+        display: ["Cabinet Grotesk", "Fjalla One", "sans-serif"],
+        body: ["Gantari", "Inter", "sans-serif"],
       },
       colors: {
         primary: "#6153CD",
