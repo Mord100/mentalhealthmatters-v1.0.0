@@ -169,7 +169,7 @@ const Footer = () => {
         </div>
 
         {/* Newsletter Signup */}
-        <div className="mt-16 pt-12 border-t border-neutral-800">
+        {/* <div className="mt-16 pt-12 border-t border-neutral-800">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="text-xl font-serif font-normal text-white mb-3">
@@ -190,20 +190,20 @@ const Footer = () => {
               </button>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Bottom Footer */}
         <div className="mt-16 pt-8 border-t border-neutral-800">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="flex flex-col md:flex-row items-center gap-4 text-sm font-body text-neutral-400">
-              <p>© 2024 Mental Health Matters. All rights reserved.</p>
+              <p>© 2025 Mental Health Matters. All rights reserved.</p>
               <div className="flex gap-4">
                 <a href="#" className="hover:text-white transition-colors duration-300">Privacy Policy</a>
                 <a href="#" className="hover:text-white transition-colors duration-300">Terms of Service</a>
               </div>
             </div>
             <div className="text-sm font-body text-neutral-400">
-              Developed with care by{" "}
+              Developed by{" "}
               <a
                 href="https://divdynamics.netlify.app/"
                 className="text-primary hover:text-primary/80 transition-colors duration-300"
