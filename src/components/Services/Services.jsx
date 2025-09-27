@@ -184,7 +184,7 @@ export default function Example() {
                       <span>Learn More</span>
                       <div className="relative">
                         <div className="w-8 h-8 border-2 border-neutral-300 rounded-full flex items-center justify-center transition-all duration-300 group-hover/link:border-primary group-hover/link:bg-primary group-hover/link:scale-110">
-                          <span className="text-sm text-neutral-600 transition-all duration-300 group-hover/link:text-white group-hover/link:translate-x-0.5">→</span>
+                          <span className="text-sm text-neutral-600 transition-all duration-300 group-hover/link:text-white group-hover/link:translate-x-0.5 leading-none">→</span>
                         </div>
                         <div className="absolute inset-0 w-8 h-8 border-2 border-primary rounded-full opacity-0 group-hover/link:opacity-100 group-hover/link:scale-150 transition-all duration-500"></div>
                       </div>
@@ -230,7 +230,7 @@ export default function Example() {
               >
                 <span>Schedule Consultation</span>
                 <div className="w-4 h-4 border border-white/30 rounded-full flex items-center justify-center transition-all duration-300 group-hover:border-white/60">
-                  <span className="text-xs transition-transform duration-300 group-hover:translate-x-0.5">→</span>
+                  <span className="text-xs transition-transform duration-300 group-hover:translate-x-0.5 leading-none">→</span>
                 </div>
               </a>
               <a

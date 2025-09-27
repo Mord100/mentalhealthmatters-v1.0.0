@@ -166,7 +166,7 @@ export default function Example() {
               >
                 <span>Partner With Us</span>
                 <div className="w-4 h-4 border border-neutral-400 rounded-full flex items-center justify-center transition-all duration-300 group-hover:border-primary group-hover:bg-primary">
-                  <span className="text-xs text-neutral-600 transition-colors duration-300 group-hover:text-white">→</span>
+                  <span className="text-xs text-neutral-600 transition-colors duration-300 group-hover:text-white leading-none">→</span>
                 </div>
               </a>
               <a

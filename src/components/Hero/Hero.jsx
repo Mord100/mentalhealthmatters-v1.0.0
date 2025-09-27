@@ -118,7 +118,7 @@ export default function Example() {
             >
               <span>Contact</span>
               <div className="w-4 h-4 border border-neutral-400 rounded-full flex items-center justify-center transition-all duration-300 group-hover:border-neutral-900 group-hover:bg-neutral-900">
-                <span className="text-xs text-neutral-600 transition-colors duration-300 group-hover:text-white">→</span>
+                <span className="text-xs text-neutral-600 transition-colors duration-300 group-hover:text-white leading-none">→</span>
               </div>
             </a>
           </div>
@@ -127,107 +127,116 @@ export default function Example() {
           className="lg:hidden"
           open={mobileMenuOpen}
           onClose={setMobileMenuOpen}
+          transition
         >
-          <div className="fixed inset-0 z-50 bg-neutral-900/40 backdrop-blur-sm" />
-          <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-neutral-50 sm:max-w-sm">
-            {/* Mobile Header */}
-            <div className="flex items-center justify-between px-8 py-12">
-              <a
-                href="#"
-                className="flex items-center gap-3"
-                onClick={() => scroll.scrollToTop()}
-              >
-                <span className="sr-only">Mental Health Matters</span>
-                <img
-                  className="h-8 w-auto"
-                  src={Logo}
-                  alt="Mental Health Matters Logo"
-                />
-              </a>
+          <div className="fixed inset-0 z-50 transition duration-300 ease-out data-[closed]:opacity-0 data-[leave]:duration-200 data-[leave]:ease-in">
+            {/* Backdrop */}
+            <div className="fixed inset-0 bg-neutral-900/40 backdrop-blur-sm" />
 
-              <button
-                type="button"
-                className="group relative w-10 h-10 flex items-center justify-center"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                <span className="sr-only">Close menu</span>
-                <div className="w-5 h-5 flex items-center justify-center">
-                  <XMarkIcon className="h-5 w-5 text-neutral-600 transition-colors duration-300 group-hover:text-neutral-900" />
-                </div>
-              </button>
-            </div>
+            {/* Panel sliding from left */}
+            <DialogPanel
+              transition
+              className="fixed inset-y-0 left-0 z-50 w-full overflow-y-auto bg-neutral-50 sm:max-w-sm transform transition duration-400 ease-out data-[closed]:-translate-x-full data-[leave]:duration-300 data-[leave]:ease-in"
+            >
+              {/* Mobile Header */}
+              <div className="flex items-center justify-between px-8 py-12">
+                <a
+                  href="#"
+                  className="flex items-center gap-3"
+                  onClick={() => scroll.scrollToTop()}
+                >
+                  <span className="sr-only">Mental Health Matters</span>
+                  <img
+                    className="h-8 w-auto"
+                    src={Logo}
+                    alt="Mental Health Matters Logo"
+                  />
+                </a>
 
-            {/* Mobile Navigation */}
-            <div className="px-8 py-8">
-              <div className="space-y-8">
-                {navigation.map((item, index) => (
-                  <div key={item.name} className="group">
-                    <ScrollLink
-                      to={item.href}
-                      smooth={true}
-                      duration={500}
-                      className="block cursor-pointer"
-                      onClick={() => setMobileMenuOpen(false)}
-                    >
-                      <div className="flex items-baseline gap-4">
-                        <span className="text-xs font-display font-light text-neutral-400">
-                          0{index + 1}
-                        </span>
-                        <span className="text-2xl font-serif font-normal text-neutral-900 transition-colors duration-300 group-hover:text-primary">
-                          {item.name}
-                        </span>
-                      </div>
-                      <div className="w-0 h-px bg-primary mt-2 transition-all duration-500 group-hover:w-16"></div>
-                    </ScrollLink>
+                <button
+                  type="button"
+                  className="group relative w-10 h-10 flex items-center justify-center"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  <span className="sr-only">Close menu</span>
+                  <div className="w-5 h-5 flex items-center justify-center">
+                    <XMarkIcon className="h-5 w-5 text-neutral-600 transition-colors duration-300 group-hover:text-neutral-900" />
                   </div>
-                ))}
+                </button>
               </div>
 
-              {/* Mobile Contact Section */}
-              <div className="mt-16 pt-8 border-t border-neutral-200">
-                <div className="space-y-6">
-                  <div>
-                    <h4 className="text-sm font-sans font-semibold text-neutral-900 uppercase tracking-wider mb-3">
-                      Get in Touch
-                    </h4>
-                    <a
-                      href="#"
-                      className="group flex items-center gap-3 text-base font-body text-neutral-600 transition-colors duration-300 hover:text-neutral-900"
-                    >
-                      <span>Contact Us</span>
-                      <div className="w-4 h-4 border border-neutral-400 rounded-full flex items-center justify-center transition-all duration-300 group-hover:border-primary group-hover:bg-primary">
-                        <span className="text-xs text-neutral-600 transition-colors duration-300 group-hover:text-white">→</span>
-                      </div>
-                    </a>
-                  </div>
+              {/* Mobile Navigation */}
+              <div className="px-8 py-8">
+                <div className="space-y-8">
+                  {navigation.map((item, index) => (
+                    <div key={item.name} className="group">
+                      <ScrollLink
+                        to={item.href}
+                        smooth={true}
+                        duration={500}
+                        className="block cursor-pointer"
+                        onClick={() => setMobileMenuOpen(false)}
+                      >
+                        <div className="flex items-baseline gap-4">
+                          <span className="text-xs font-display font-light text-neutral-400">
+                            0{index + 1}
+                          </span>
+                          <span className="text-2xl font-serif font-normal text-neutral-900 transition-colors duration-300 group-hover:text-primary">
+                            {item.name}
+                          </span>
+                        </div>
+                        <div className="w-0 h-px bg-primary mt-2 transition-all duration-500 group-hover:w-16"></div>
+                      </ScrollLink>
+                    </div>
+                  ))}
+                </div>
 
-                  <div>
-                    <h4 className="text-sm font-sans font-semibold text-neutral-900 uppercase tracking-wider mb-3">
-                      Follow Us
-                    </h4>
-                    <div className="flex gap-4">
-                      {['Instagram', 'Facebook', 'LinkedIn'].map((social) => (
-                        <a
-                          key={social}
-                          href="#"
-                          className="text-xs font-body text-neutral-500 transition-colors duration-300 hover:text-primary"
-                        >
-                          {social}
-                        </a>
-                      ))}
+                {/* Mobile Contact Section */}
+                <div className="mt-16 pt-8 border-t border-neutral-200">
+                  <div className="space-y-6">
+                    <div>
+                      <h4 className="text-sm font-sans font-semibold text-neutral-900 uppercase tracking-wider mb-3">
+                        Get in Touch
+                      </h4>
+                      <a
+                        href="#"
+                        className="group flex items-center gap-3 text-base font-body text-neutral-600 transition-colors duration-300 hover:text-neutral-900"
+                      >
+                        <span>Contact Us</span>
+                        <div className="w-4 h-4 border border-neutral-400 rounded-full flex items-center justify-center transition-all duration-300 group-hover:border-primary group-hover:bg-primary">
+                          <span className="text-xs text-neutral-600 transition-colors duration-300 group-hover:text-white leading-none">→</span>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div>
+                      <h4 className="text-sm font-sans font-semibold text-neutral-900 uppercase tracking-wider mb-3">
+                        Follow Us
+                      </h4>
+                      <div className="flex gap-4">
+                        {['Instagram', 'Facebook', 'LinkedIn'].map((social) => (
+                          <a
+                            key={social}
+                            href="#"
+                            className="text-xs font-body text-neutral-500 transition-colors duration-300 hover:text-primary"
+                          >
+                            {social}
+                          </a>
+                        ))}
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
 
-              {/* Mobile Footer */}
-              <div className="mt-16 pt-8 border-t border-neutral-200">
-                <p className="text-xs font-body text-neutral-500 leading-relaxed">
-                  © 2024 Mental Health Matters. Building supportive communities for mental wellness.
-                </p>
+                {/* Mobile Footer */}
+                <div className="mt-16 pt-8 border-t border-neutral-200">
+                  <p className="text-xs font-body text-neutral-500 leading-relaxed">
+                    © 2025 Mental Health Matters.
+                  </p>
+                </div>
               </div>
-            </div>
-          </DialogPanel>
+            </DialogPanel>
+          </div>
         </Dialog>
       </header>
 
@@ -386,7 +395,7 @@ export default function Example() {
                                   >
                                     <span>Register Now</span>
                                     <div className="w-4 h-4 border border-white/30 rounded-full flex items-center justify-center transition-all duration-300 group-hover:border-white/60">
-                                      <span className="text-xs transition-transform duration-300 group-hover:translate-x-0.5">→</span>
+                                      <span className="text-xs transition-transform duration-300 group-hover:translate-x-0.5 leading-none">→</span>
                                     </div>
                                   </button>
                                 </div>
@@ -444,7 +453,7 @@ export default function Example() {
                                   >
                                     <span>Register Now</span>
                                     <div className="w-4 h-4 border border-white/30 rounded-full flex items-center justify-center transition-all duration-300 group-hover:border-white/60">
-                                      <span className="text-xs transition-transform duration-300 group-hover:translate-x-0.5">→</span>
+                                      <span className="text-xs transition-transform duration-300 group-hover:translate-x-0.5 leading-none">→</span>
                                     </div>
                                   </button>
                                 </div>
@@ -502,7 +511,7 @@ export default function Example() {
                                 >
                                   View Event Photos
                                   <div className="w-4 h-4 border border-neutral-400 rounded-full flex items-center justify-center transition-all duration-300 group-hover:border-neutral-600">
-                                    <span className="text-xs transition-transform duration-300 group-hover:translate-x-0.5">→</span>
+                                    <span className="text-xs transition-transform duration-300 group-hover:translate-x-0.5 leading-none">→</span>
                                   </div>
                                 </button>
                               </div>
@@ -552,7 +561,7 @@ export default function Example() {
                             className="w-48 lg:w-56 h-auto rounded-2xl shadow-lg"
                           />
                           <p className="text-lg font-body text-white/90 max-w-md mt-4">
-                            Building supportive communities for mental wellness and healing
+                            A youth-led initiative, improving access to mental health services in Malawi and beyond.
                           </p>
                         </div>
                       </div>
