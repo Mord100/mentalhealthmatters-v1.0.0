@@ -129,6 +129,25 @@ const ImageGalleryComponent = () => {
     return images.slice(startIndex, startIndex + imagesPerSlide);
   };
 
+  // Get visible indicators (sliding window)
+  const getVisibleIndicators = () => {
+    const maxVisible = 5;
+    const half = Math.floor(maxVisible / 2);
+
+    if (totalSlides <= maxVisible) {
+      return Array.from({ length: totalSlides }, (_, i) => i);
+    }
+
+    let start = Math.max(0, currentSlide - half);
+    let end = Math.min(totalSlides - 1, start + maxVisible - 1);
+
+    if (end - start < maxVisible - 1) {
+      start = Math.max(0, end - maxVisible + 1);
+    }
+
+    return Array.from({ length: end - start + 1 }, (_, i) => start + i);
+  };
+
   return (
     <section id='gallery' className="bg-neutral-50 py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-8 lg:px-16">
@@ -162,7 +181,7 @@ const ImageGalleryComponent = () => {
         {/* Carousel Container */}
         <div className="relative">
           {/* Carousel Navigation */}
-          <div className="absolute top-1/2 -translate-y-1/2 -left-4 lg:-left-8 z-10">
+          <div className="absolute top-[40%] -translate-y-1/2 -left-4 lg:-left-8 z-10">
             <button
               onClick={prevSlide}
               className="group w-12 h-12 lg:w-14 lg:h-14 bg-white/90 backdrop-blur-md rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:bg-white"
@@ -171,7 +190,7 @@ const ImageGalleryComponent = () => {
             </button>
           </div>
 
-          <div className="absolute top-1/2 -translate-y-1/2 -right-4 lg:-right-8 z-10">
+          <div className="absolute top-[40%] -translate-y-1/2 -right-4 lg:-right-8 z-10">
             <button
               onClick={nextSlide}
               className="group w-12 h-12 lg:w-14 lg:h-14 bg-white/90 backdrop-blur-md rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:bg-white"
@@ -238,12 +257,12 @@ const ImageGalleryComponent = () => {
 
           {/* Carousel Indicators */}
           <div className="flex justify-center items-center gap-3 mt-8">
-            {Array.from({ length: totalSlides }).map((_, index) => (
+            {getVisibleIndicators().map((slideIndex) => (
               <button
-                key={index}
-                onClick={() => goToSlide(index)}
+                key={slideIndex}
+                onClick={() => goToSlide(slideIndex)}
                 className={`transition-all duration-300 ${
-                  index === currentSlide
+                  slideIndex === currentSlide
                     ? 'w-8 h-2 bg-primary rounded-full'
                     : 'w-2 h-2 bg-neutral-300 rounded-full hover:bg-neutral-400'
                 }`}
